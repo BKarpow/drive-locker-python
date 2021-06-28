@@ -1,0 +1,2 @@
+2021-06-28 21:38:55.933 | DEBUG    | __main__:check_autorun_windows:73 - Key "DriveLockerPy" autorun exists
+2021-06-28 21:38:55.933 | INFO     | __main__:loop:150 - Start Drive locker!
