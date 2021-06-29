@@ -4,8 +4,8 @@
 block_cipher = None
 
 
-a = Analysis(['locker.py'],
-             pathex=['C:\\Users\\MonaxDex\\Documents\\python\\driveLocker'],
+a = Analysis(['locker.pyw'],
+             pathex=['C:\\Users\\XE\\Documents\\python\\driveLocker'],
              binaries=[],
              datas=[],
              hiddenimports=[],

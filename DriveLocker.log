@@ -1,2 +1,10 @@
 2021-06-28 21:38:55.933 | DEBUG    | __main__:check_autorun_windows:73 - Key "DriveLockerPy" autorun exists
 2021-06-28 21:38:55.933 | INFO     | __main__:loop:150 - Start Drive locker!
+2021-06-28 21:40:07.536 | DEBUG    | __main__:check_autorun_windows:73 - Key "DriveLockerPy" autorun exists
+2021-06-28 21:40:07.537 | INFO     | __main__:loop:150 - Start Drive locker!
+2021-06-29 18:25:31.121 | DEBUG    | locker:alert_box:30 - Alert - Ура!, Флешку-ключ створено, без неi копиютер буде блокуватися!
+2021-06-29 18:29:01.979 | DEBUG    | locker:alert_box:30 - Alert - Ура!, Флешку-ключ створено, без неi копиютер буде блокуватися!
+2021-06-29 18:29:25.579 | DEBUG    | locker:alert_box:30 - Alert - Ура!, Флешку-ключ створено, без неi копиютер буде блокуватися!
+2021-06-29 18:31:06.988 | DEBUG    | locker:alert_box:30 - Alert - Ура!, Флешку-ключ створено, без неi копиютер буде блокуватися!
+2021-06-29 18:32:02.647 | DEBUG    | __main__:check_autorun_windows:79 - Key "DriveLockerPy" autorun exists
+2021-06-29 18:32:02.648 | INFO     | __main__:loop:156 - Start Drive locker!

@@ -59,6 +59,7 @@ def main():
             locker.create_reg_key()
         locker.create_reg_value(new_key)
         create_key(drive_caption, new_key)
+        locker.alert_box('Ура!', 'Флешку-ключ створено, без неi копиютер буде блокуватися!')
         print('Creating usb key - success! Please run locker.')
     else:
         print('Не удалось найти флешки!')

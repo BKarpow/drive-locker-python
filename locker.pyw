@@ -2,6 +2,7 @@ import ctypes
 import hashlib
 import win32com.client
 import sys
+import win32api
 
 from pathlib import Path
 from os.path import join, isfile
@@ -13,7 +14,7 @@ logger.add('DriveLocker.log')
 
 
 reg = Reg()
-FILE_KEY = 'DriveLocker.key'
+FILE_KEY = '.access'
 ACC_CONTENT = 'c8524dbce0b244b02915bbe38a87586e'
 TIMEOUT_LOOP = 1
 AUTIRUN = True
@@ -23,6 +24,11 @@ REGISTRY_KEY = r'DriveLocker'
 REGISTRY_SOFTWARE = r'HKLM\SOFTWARE'
 AUTORUN_NAME = 'DriveLockerPy'
 ENCODING = 'utf8'
+
+
+def alert_box(title, message = ''):
+    logger.debug(f'Alert - {title}, {message}')
+    win32api.MessageBox(0, message, title)
 
 
 def get_md5(string):
@@ -131,7 +137,7 @@ def locker():
     k = scan_usbDrive_from_key()
     access_key = get_reg_value_key()
     if not access_key:
-        logger.error("Please create usb key using utilit createKeyFromDrive!!!!")
+        alert_box('Помилка', 'Ключ не створено, скорестуйтесь утилiтой createKeyFromDrive.py')
         return False
     if k:
         with open(k ,'r') as fk:
